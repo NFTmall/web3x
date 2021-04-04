@@ -37,7 +37,8 @@ export interface ContractEntryDefinition {
   inputs?: AbiInput[];
   name?: string;
   outputs?: AbiOutput[];
-  type: 'function' | 'constructor' | 'event' | 'fallback';
+  // type: 'function' | 'constructor' | 'event' | 'fallback'; // original
+  type: 'function' | 'constructor' | 'event' | 'fallback' | 'receive';
   stateMutability?: 'pure' | 'view' | 'payable' | 'nonpayable';
   signature?: string;
   gas?: number;
